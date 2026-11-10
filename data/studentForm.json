@@ -1,0 +1,18 @@
+{
+  "firstName": "Dede",
+  "lastName": "Zuliana",
+  "email": "dede.zuliana@transjakarta.test",
+  "gender": "Male",
+  "mobile": "0812345678",
+  "dateOfBirth": {
+    "day": "17",
+    "month": "August",
+    "year": "1995"
+  },
+  "subjects": ["Maths", "Computer Science", "English"],
+  "hobbies": ["Sports", "Reading", "Music"],
+  "picture": "sample-picture.png",
+  "currentAddress": "Jl. Mayjen Sutoyo No.1, Cawang, Jakarta Timur",
+  "state": "NCR",
+  "city": "Delhi"
+}
