@@ -5,3 +5,4 @@ blob-report/
 playwright/.cache/
 .DS_Store
 run-log.txt
+screenshots/

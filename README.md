@@ -83,7 +83,15 @@ npx playwright test --ui
 npm run report
 ```
 
-Laporan HTML dibuat di folder `playwright-report/`. Screenshot, video, dan trace otomatis disimpan di `test-results/` untuk test yang gagal.
+Laporan HTML dibuat di folder `playwright-report/`. Untuk menjalankan test lalu langsung membuka report di browser:
+
+```bash
+npm run test:report
+```
+
+Tekan `Ctrl+C` di terminal untuk menutup server report. Screenshot, video, dan trace otomatis disimpan di `test-results/` untuk test yang gagal.
+
+Setiap assertion juga mengambil screenshot sebagai bukti. File-nya disimpan di `screenshots/<nama-test>/` dan ikut dilampirkan di laporan HTML pada tiap test.
 
 ## Catatan Implementasi
 

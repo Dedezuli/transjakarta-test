@@ -5,6 +5,7 @@
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",
+    "test:report": "playwright test",
     "test:webtables": "playwright test tests/webTables.spec.ts --headed",
     "test:droppable": "playwright test tests/droppable.spec.ts --headed",
     "test:resizable": "playwright test tests/resizable.spec.ts --headed",

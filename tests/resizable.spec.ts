@@ -11,9 +11,11 @@ test.describe('Soal 3 - Resize Element (Resizable)', () => {
 
     const initial = await resizable.getSize();
     expect(initial).not.toEqual(target);
+    await resizable.screenshot(`ukuran awal ${initial.width}x${initial.height}`);
 
     await resizable.resizeTo(target);
 
     await resizable.expectSize(target);
+    await resizable.screenshot(`ukuran akhir ${target.width}x${target.height}`);
   });
 });

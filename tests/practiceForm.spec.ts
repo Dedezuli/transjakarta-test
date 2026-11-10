@@ -27,6 +27,7 @@ test.describe('Soal 4 - Student Registration Form', () => {
       for (const [label, value] of Object.entries(expected)) {
         expect.soft(actual[label], `Field "${label}"`).toBe(value);
       }
+      await form.screenshot('popup konfirmasi');
     });
   });
 });

@@ -7,7 +7,7 @@ export default defineConfig({
   fullyParallel: false,
   workers: 1,
   retries: 1,
-  reporter: [['list'], ['html', { open: 'never' }]],
+  reporter: [['list'], ['html', { open: process.env.npm_lifecycle_event === 'test:report' ? 'always' : 'never' }]],
   use: {
     baseURL: 'https://demoqa.com',
     viewport: { width: 1920, height: 1080 },

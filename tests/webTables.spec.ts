@@ -20,9 +20,11 @@ test.describe('Soal 1 - Bulk Insert User di Web Tables', () => {
       for (const user of users) {
         await test.step(`${user.firstName} ${user.lastName} (${user.email})`, async () => {
           await webTables.expectUserInTable(user);
+          await webTables.screenshot(`user ${user.firstName} ${user.lastName}`);
         });
       }
       await webTables.clearSearch();
+      await webTables.screenshot('tabel semua user');
     });
   });
 });
